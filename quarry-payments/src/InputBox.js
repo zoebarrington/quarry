@@ -8,7 +8,7 @@ const InputBox = () => {
     e.preventDefault();
     try {
       // Send a POST request to the /names URL to save the name
-      await axios.post('/names', { name });
+      await axios.post('http://localhost:5000/names', { name });
       setName('Submitted!'); // Clear the input field after submission
     } catch (error) {
       console.error(error);

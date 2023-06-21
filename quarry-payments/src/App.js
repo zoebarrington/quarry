@@ -7,11 +7,13 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 function App() {
   return (
     <div className="App">
+               <InputBox></InputBox>
+      <div className="payPalInnerContainer">
        <PayPalScriptProvider options={{ clientId: "test" }}>
             <PayPalButtons style={{ layout: "horizontal" }} />
         </PayPalScriptProvider>
-         <InputBox></InputBox>
-<Names></Names>
+        </div>
+        <Names></Names>
     </div>
   );
 }
